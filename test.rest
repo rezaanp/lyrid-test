@@ -1,0 +1,67 @@
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"reza", 
+    "password": "reza"
+}
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "rezanuki Pangestu",
+    "username":"reza100", 
+    "password": "reza",
+    "confirmPassword": "reza"
+}
+
+###
+GET http://localhost:5000/users?pageIndex=0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYzEyNTE4ZC01YmNlLTQ0MTQtOTFjYi0yODI5NjI1MzUwOWYiLCJpYXQiOjE2OTM2OTg0OTUsImV4cCI6MTY5MzcwMjA5NX0.WQtNjregF_-CfcSLHA2V0VnqQ6cluGp4yfM5yuwN0pc
+
+###
+GET http://localhost:3000/employees/1454dfa2-a03f-4aaf-a5bc-284b7d26c994
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYzEyNTE4ZC01YmNlLTQ0MTQtOTFjYi0yODI5NjI1MzUwOWYiLCJpYXQiOjE2OTM2Mzc3MjYsImV4cCI6MTY5MzY0MTMyNn0.XTWIoK_cw9Ifh12GeiWW6D4VayDRq4lQebG5-sfKWZk
+
+###
+POST http://localhost:3000/employees
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYzEyNTE4ZC01YmNlLTQ0MTQtOTFjYi0yODI5NjI1MzUwOWYiLCJpYXQiOjE2OTM2Mzc3MjYsImV4cCI6MTY5MzY0MTMyNn0.XTWIoK_cw9Ifh12GeiWW6D4VayDRq4lQebG5-sfKWZk
+Content-Type: application/json
+
+{
+    "name": "rezanuki pangestu", 
+    "role": "fullstack developer", 
+    "salary": 15000000, 
+    "age": 23, 
+    "imageProfil": "halo profil"
+}
+
+###
+PATCH http://localhost:3000/employees/1454dfa2-a03f-4aaf-a5bc-284b7d26c994
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYzEyNTE4ZC01YmNlLTQ0MTQtOTFjYi0yODI5NjI1MzUwOWYiLCJpYXQiOjE2OTM2Mzc3MjYsImV4cCI6MTY5MzY0MTMyNn0.XTWIoK_cw9Ifh12GeiWW6D4VayDRq4lQebG5-sfKWZk
+Content-Type: application/json
+
+{
+    "name": "rezanuki pangestu", 
+    "role": "fullstack developer", 
+    "salary": 20000000, 
+    "age": 23, 
+    "imageProfil": "halo profil update"
+}
+
+###
+DELETE http://localhost:3000/employees/3b6899f3-11cf-4b11-a505-b2530957d0b4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjMyZjUwOC04NDUxLTQ5YjItYjBmYy1iOTgzYjVjYTcwZWUiLCJpYXQiOjE2OTM2MzU4OTYsImV4cCI6MTY5MzYzOTQ5Nn0.Ow5BE35gxfKRSq13uQ69i5YW_tOLep8EI-nOmnJhrXs
+
+
+
+###
+{
+    "name": "akun baru",
+    "username":"akun",
+    "password":"baru",
+    "confirmPassword":"baru" 
+}
